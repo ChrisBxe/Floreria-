@@ -1,0 +1,162 @@
+/*body*/
+body {
+    padding-top: 50px;
+    background-color: #F2DDEE;
+}
+
+/*Barra de navegación pantalla de dispositivos móviles*/
+
+@media (max-width: 576px) {
+    #Contenedor_login {
+        max-width: 100%;
+        padding-top: 10px;
+    }
+    .menu-toggle{
+        color: #741B47;
+    }
+    nav ul {
+        display: none;
+    }
+    
+    nav ul.active {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    nav ul.active li {
+        margin-right: 0;
+    }
+    
+    nav ul.active li a {
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .search-container {
+        text-align: center;
+    }
+
+    .clearfix{
+        border: hidden;
+        height: 1px;
+        clear: both;
+    }
+}
+
+/*Barra de navegación pantalla de PC*/
+
+@media (min-width: 576px){
+    .menu-toggle{
+        color: #DBADD2;
+    }
+
+    nav {
+        background-color: #DBADD2;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+      
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+      
+    nav ul li {
+        margin-right: 10px;
+    }
+      
+    nav ul li a {
+        color: #FFF;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+      
+    .search-container {
+        text-align: right;
+        margin-top: 1%;
+    }
+
+    .clearfix{
+        border: hidden;
+        height: 10%;
+        clear: both;
+    }
+}
+
+/*Tamaño del formulario, se usa como control*/
+#formulario{
+    width: 100%;
+}
+
+/*Contenedor de los botones e ícono*/
+#Contenedor_login {
+    height: max-content;
+    width: 80%;
+    border: solid white 3px;
+    margin: auto;
+}
+
+/*Posicionamiento del texto "Inicio de sesión" dentro del margen*/
+#inises{
+    width: 220px;
+    float: left;
+    margin-top: -22px;
+    margin-left: 27px;
+    background-color: #F2DDEE;
+    color: white;
+}
+
+/*Posicionamiento del botón "Regresar"*/
+.regresar {
+    position: fixed;
+    bottom: 3px;
+    left: 10px;
+}
+
+/*Posición del link para registrarse*/
+#registrarse{
+    text-align: center;
+}
+
+/*Estilo del link para registrarse*/
+#registro{
+    color: #741B47;
+}
+
+/*Se hace el estilo para el pié de página*/
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: #B1FF91;
+    position: fixed;
+    bottom: 0;
+}
+
+/*Se hace el estilo para el botón "regresar"*/
+footer .regresar {
+    text-decoration: none;
+    color: #741B47;
+    border: solid #DBADD2 3px;
+    border-radius: 3px;
+    background-color: #F2DDEE;
+}
+
+/*Cuando se esté encima del botón "regresar", se cambia el estilo*/
+footer .regresar:hover {
+    text-decoration: none;
+    color: black;
+    border: solid black 3px;
+    border-radius: 3px;
+    background-color: lightgray;
+}
