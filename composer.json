@@ -1,0 +1,7 @@
+{
+    require {
+        vendorpackage 1.3.2,
+        vendorpackage2 1.,
+        vendorpackage3 ^2.0.3
+    }
+}
